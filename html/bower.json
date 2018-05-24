@@ -1,0 +1,21 @@
+{
+  "name": "vuzela",
+  "description": "vuzela",
+  "main": "index.html",
+  "keywords": [
+    "vuzela"
+  ],
+  "authors": [
+    "vuzela"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
