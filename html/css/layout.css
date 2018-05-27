@@ -1,0 +1,18 @@
+.header {
+	
+}
+.header .logo {
+	float: left;
+	width: 22%;
+}
+.header .header_right {
+	float: right;
+	width: 78%;
+}
+.header_right {}
+.header_right:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.header_menu_right {}
