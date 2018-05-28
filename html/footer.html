@@ -9,36 +9,136 @@
 </head>
 <body>
 
+<!--Pulling Awesome Font-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <style>
-    .container.wide {
-        width: 1920px;
+    @font-face{font-family:futura-pt;
+        src:url(fonts/futura-pt-light.woff) format("woff");
+        font-weight:300;font-style:normal
     }
-</style>
+    .wide h4{ font-family: 'futura-pt';}
 
-<footer>
+
+
+    .fdter h4{ min-height: 4rem;line-height: 27px}
+    .fdter table td.dot{ border-top: 1px dashed #555555}
+    /*.fdter table td.dot:hover{ border-top: 1px solid #555555}*/
+    .fdter table tr:hover > td.dot{ border-top: 1px solid #555555; color: #fb4d01; background: inherit;}
+    .fdter table tr:hover > td.dot{ border-top: 1px solid #555555; color: #fb4d01;}
+    .bgcolorred{  border-color: #555555;}
+    .bgcolorred:hover,.bgcolorred:active{background-color: #d76c43; border-color: #d76c43;}
+
+    /*/ Extra large devices (large desktops, 1200px and up)*/
+    @media (max-width: 1200px) {  }
+
+    /* Large devices (desktops, 992px and up)*/
+    @media (max-width: 992px) {
+        .fdter h4{ min-height: 81px; line-height: 27px}
+    }
+
+    /*/ Medium devices (tablets, 768px and up)*/
+    @media (max-width: 768px) {  }
+
+    /* Small devices (landscape phones, 576px and up)*/
+    @media (max-width: 576px) {  }
+
+    /* Small devices (landscape phones, 480px and up)*/
+    @media (max-width: 480px) {  }
+
+    /* --------------------  footer --------------------  */
+    /*!* footer social icons *!*/
+    /*ul.social-network {*/
+        /*list-style: none;*/
+        /*display: inline;*/
+        /*margin-left:0 !important;*/
+        /*padding: 0;*/
+    /*}*/
+    /*ul.social-network li {*/
+        /*display: inline;*/
+        /*margin: 0 5px;*/
+    /*}*/
+    /* -------------------- end footer -------------------- */
+
+
+
+
+
+</style>
+<div class="container">
+    <div class="row">
+        <h3 class="pt-3 text-center w-100"><a class="border-bottom">Wellcome vuvuzela nail lounge</a></h3>
+        <div class="col-md-5 mx-auto">
+            <div class="row">
+                <ul class=" nav navbar navbar-collapse">
+                    <li>
+                        Monday - Friday<br/>
+                        9:00am - 9:00pm
+                    </li>
+                    <li>
+                        Saturday<br/>
+                        9:00am - 7:00pm
+                    </li>
+                    <li>
+                        Monday - Friday<br/>
+                        9:00am - 9:00pm
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12 pt-3">
+            <div class="row justify-content-center">
+
+                <div class="col-md-4 col-12 col-sm-6">
+                    <div class="row">
+                        <img src="images/index_1.png" class="img-fluid mx-auto"/>
+                    </div>
+                    <p class="text-justify">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+                <div class="col-md-4 col-12 col-sm-6">
+                    <div class="row">
+                        <img src="images/index_2.png" class="img-fluid mx-auto"/>
+                    </div>
+                    <p class="text-justify">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+
+                </div>
+                <div class="col-md-4 col-12 col-sm-6">
+                    <div class="row">
+                        <img src="images/index_3.png" class="img-fluid mx-auto"/>
+                    </div>
+                    <p class="text-justify">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<article>
     <div class="container wide">
         <div class="row">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-3 col-lg-3 col-sm-6">
                 <picture class="row">
                     <img src="images/qc_nailssalon.png" class="img-fluid"/>
                 </picture>
             </div>
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-3 col-lg-3 col-sm-6">
                     <picture class="row">
                         <img src="images/qc_20.png" class="img-fluid"/>
                     </picture>
                 </div>
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-3 col-lg-3 col-sm-6">
                     <picture class="row">
                         <img src="images/qc_25.png" class="img-fluid"/>
                     </picture>
                 </div>
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-3 col-lg-3 col-sm-6">
                 <picture class="row">
                     <img src="images/qc_skincare.png" class="img-fluid"/>
                 </picture>
             </div>
-
         </div>
     </div>
     <div class="container wide fdter">
@@ -51,86 +151,200 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-12">
-                <div class="card text-center border-0">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12 col-sm-6">
+                <div class="text-center">
                     <table class="table table-hover">
                         <thead>
                         <tr>
                             <th scope="col" colspan="2" class="border-top-0" style="border-color: #555555">
-                                <img src="images/manicure-pedicure.png" class="img-fluid">
-                                <h3 class="card-text">manicure & pedicure</h3>
+                                <img src="images/manicure-pedicure.png" class="img-fluid" />
+                                <h4 class="card-text text-uppercase">manicure & pedicure</h4>
                             </th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
+                            <td class="dot">Olive Oil Manicure</td>
+                            <td class="dot">80.00
+                            </td>
                         </tr>
                         <tr>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
+                            <td class="dot">Red Door Signature Manicure</td>
+                            <td class="dot">60.00</td>
+                        </tr>
+                        <tr>
+                            <td class="dot">Youth Restoring Manicure</td>
+                            <td class="dot">25.00</td>
+                        </tr>
+                        <tr>
+                            <td class="dot">Healing Pedicure</td>
+                            <td class="dot">50.00</td>
+                        </tr>
+                        <tr>
+                            <td class="dot">Pedicure Refresher</td>
+                            <td class="dot">15.00</td>
+                        </tr>
+                        <tr>
+                            <td class="dot">Warm Cream Pedicure</td>
+                            <td class="dot">80.00</td>
+                        </tr>
+                        <tr>
+                            <td class="dot">Youth Restoring Pedicure</td>
+                            <td class="dot">60.00</td>
+                        </tr>
+                        <tr>
+                            <td class="dot">Fill In</td>
+                            <td class="dot">25.00</td>
                         </tr>
                         </tbody>
                     </table>
+                    <button type="button" class="btn btn-light bgcolorred btn-lg btn-block">BOOK FACIAL >></button>
                 </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 col-sm-6">
                 <div class="card text-center border-0">
                         <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col" colspan="2" class="border-top-0" style="border-color: #555555">
-                                    <img src="images/manicure-pedicure.png" class="img-fluid">
-                                    <h3 class="card-text">manicure & pedicure</h3>
+                                    <img src="images/faceals.png" class="img-fluid">
+                                    <h4 class="card-text text-uppercase">facials & permanent tattoo make up</h4>
                                 </th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
+                                <td class="dot">Olive Oil Manicure</td>
+                                <td class="dot">80.00
+                                </td>
                             </tr>
                             <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
+                                <td class="dot">Red Door Signature Manicure</td>
+                                <td class="dot">60.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Youth Restoring Manicure</td>
+                                <td class="dot">25.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Healing Pedicure</td>
+                                <td class="dot">50.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Pedicure Refresher</td>
+                                <td class="dot">15.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Warm Cream Pedicure</td>
+                                <td class="dot">80.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Youth Restoring Pedicure</td>
+                                <td class="dot">60.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Fill In</td>
+                                <td class="dot">25.00</td>
                             </tr>
                             </tbody>
                         </table>
+                    <button type="button" class="btn btn-light bgcolorred btn-lg btn-block">BOOK FACIAL >></button>
                 </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 col-sm-6">
                 <div class="card text-center border-0">
                         <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col" colspan="2" class="border-top-0" style="border-color: #555555">
-                                    <img src="images/manicure-pedicure.png" class="img-fluid">
-                                    <h3 class="card-text">manicure & pedicure</h3>
+                                    <img src="images/message.png" class="img-fluid">
+                                    <h4 class="card-text text-uppercase">message treatment</h4>
                                 </th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
+                                <td class="dot">Olive Oil Manicure</td>
+                                <td class="dot">80.00
+                                </td>
                             </tr>
                             <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
+                                <td class="dot">Red Door Signature Manicure</td>
+                                <td class="dot">60.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Youth Restoring Manicure</td>
+                                <td class="dot">25.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Healing Pedicure</td>
+                                <td class="dot">50.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Pedicure Refresher</td>
+                                <td class="dot">15.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Warm Cream Pedicure</td>
+                                <td class="dot">80.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Youth Restoring Pedicure</td>
+                                <td class="dot">60.00</td>
+                            </tr>
+                            <tr>
+                                <td class="dot">Fill In</td>
+                                <td class="dot">25.00</td>
                             </tr>
                             </tbody>
                         </table>
+                    <button type="button" class="btn btn-light bgcolorred btn-lg btn-block">BOOK FACIAL >></button>
                 </div>
-
+<p>&nbsp;</p>
             </div>
         </div>
-
-
     </div><!--fdter-->
 
+</article>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-4" style="border-top: 2px solid #050318;">
+                <div class="row">
+
+                    <div class="float-left">
+                        <form>
+                            <div class="form-group mb-0">
+                                <label for="exampleInputEmail1">Join Our Mailing List</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <button type="button" class="btn btn-secondary mt-1 btn-sm">Large button</button>
+                                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mx-auto">
+                        <h5 class="text-center" style="font-family:futura-pt; font-size: 16px">ABOUT CAREERS CONTACT HOW TO SPA CORPORATE GIFT SITE MAP ELIZABETH ARDEN</h5>
+                        <p class="text-center">TERMS OF USE | PRIVACY POLICY | RDMS <br/>
+                            COPYRIGHT © 2001-2016 vuvuzela the lounge</p>
+                    </div>
+                    <div class="float-right">
+                        <!--Facebook-->
+                        <!--<a href="#" class="btn btn-link" role="button"><i class="vuz vuz-facebook"> </i></a>-->
+                        <a href="#" class="btn btn-link" role="button"><i class="fab fa-facebook-f"> </i></a>
+                        <a href="#" class="btn btn-link" role="button"><i class="fab fa-instagram"> </i></a>
+                        <a href="#" class="btn btn-link" role="button"><i class="fab fa-pinterest"> </i></a>
+                        <a href="#" class="btn btn-link" role="button"><i class="fab fa-twitter"> </i></a>
+                        <a href="#" class="btn btn-link" role="button"><i class="far fa-mobile"> </i></a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-<p>dfgds gd fgdf</p>
+<p>&nbsp;</p>
 </body>
 </html>
